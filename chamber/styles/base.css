@@ -84,18 +84,16 @@ h3 {
 }
 
 div {
-    columns: 3;
-    list-style: none;
-    border-color: 519782;
+    background-color: white;
+    border-color: darkgray;
     border-style: ridge;
 }
 
 .card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -115,7 +113,23 @@ footer {
 button {
     color: white;
     background-color: darkred;
+}
 
+script {
+    background-color: navy;
+    color: white;
+}
+
+#today {
+    background-color: navy;
+}
+
+#membership,
+#events,
+#weather,
+#spotlight {
+    background-color: white;
+    color: navy;
 }
 
 
