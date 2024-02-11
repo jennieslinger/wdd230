@@ -20,12 +20,38 @@
         color: white
     }
 
+    .navigation {
+        flex-direction: row;
+    }
+
+    .narivation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
     nav a {
         color: white;
         padding: 2rem;
-        /*display: block;
-        text-align: center*/
+
     }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /*hides hamburger button*/
+    }
+
+
 
 
 
