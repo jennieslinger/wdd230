@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="green" />
+        <circle cx="75" cy="50" r="40" fill="yellow" />
+        <text x="75" y="60" font-size="30" text-anchor="middle" fill="red">SVG</text>
+    </svg>
+
+</body>
+
+</html>
+
+<!--SVG Code explanation:
+
+Start with the <svg> root element, define the width and height, and proper namespace
+The <rect> element is used to draw a rectangle
+The width and height of the rectangle is set to 100% of the width/height of the <svg> element
+Set the fill color of the rectangle to green
+The <circle> element is used to draw a circle
+The cx and cy attributes define the x and y coordinates of the center of the circle
+The r attribute defines the radius of the circle
+We set the fill color of the circle to yellow
+The <text> element is used to draw a text
+The x and y attributes define the x and y coordinates of the center of the text
+The font-size attribute defines the font size of the text
+The text-anchor attribute defines where we want the midpoint (of the text) to be
+The fill attribute defines the color of the text
+Write SVG as the text to show
+Close the SVG image with </svg>-->
+
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+    <rect width="200" height="100" x="100" y="50" rx="20" ry="20" fill="blue" />
+</svg>
+
+<!--Code explanation:
+
+The width and height attributes of the <rect> element define the height and the width of the rectangle
+The x and y attributes defines the x- and y-position of the top-left corner of the rectangle (x="100" places the rectangle 100px from the left margin and y="50" places the rectangle 50px from the top margin) in the SVG canvas
+The rx and ry attributes defines the radius of the corners of the rectangle
+The fill attribute defines the fill color of the rectangle-->
+
+<svg width="400" height="150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:red" />
+</svg>
+
+<!--Code explanation:
+
+  The style attribute is used to define CSS properties for the rectangle
+  The CSS fill property defines the fill color of the rectangle
+  The CSS stroke-width property defines the width of the border of the rectangle
+  The CSS stroke property defines the color of the border of the rectangle-->
+
+<svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+    <circle r="45" cx="50" cy="50" stroke="green" stroke-width="3" fill="red" />
+</svg>
+
+<!--Code explanation:
+
+  The r attribute defines the radius of the circle
+  The cx and cy attributes define the x- and y-axes center of the circle. If they are omitted, the circle's center is set to (0,0)-->
+
+<svg height="140" width="500" xmlns="http://www.w3.org/2000/svg">
+    <ellipse rx="100" ry="50" cx="200" cy="80" style="fill:yellow;stroke:green;stroke-width:3" />
+</svg>
+
+<!--Code explanation:
+
+The rx attribute defines the x (horizontal) radius
+The ry attribute defines the y (vertical) radius
+The cx attribute defines the x-axis center of the ellipse
+The cy attribute defines the y-axis center of the ellipse-->
+
+<svg height="210" width="300" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="0" x2="200" y2="200" style="stroke:red;stroke-width:2" />
+</svg>
+
+<!--Code explanation:
+
+The <x1> and <y1> attributes define the start of the line (0,0)
+The <x2> and <y2> attributes define the end of the line (200,200)-->
+
+<svg height="100" width="300" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="50" x2="250" y2="50" style="stroke:red;stroke-width:12" />
+</svg>
+
+<!--The <x1> and <y1> attributes define the start of the line (0,50)
+The <x2> and <y2> attributes define the end of the line (250,50)-->
+
+<svg height="210" width="300" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="0" x2="0" y2="200" style="stroke:red;stroke-width:14" />
+</svg>
+
+<!--Code explanation:
+
+The <x1> and <y1> attributes define the start of the line (0,0)
+The <x2> and <y2> attributes define the end of the line (0,200)-->
+
+<svg height="220" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="200,10 250,190 150,190" style="fill:lime;stroke:purple;stroke-width:3" />
+</svg>
+
+<!--The points attribute defines the x and y coordinates for each corner of the polygon-->
+
+<svg height="350" width="360" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="150,75 258,137 258,262 150,325 42,262 42,137" style="fill:lime;stroke:purple;stroke-width:3" />
+</svg>
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;" />
+</svg>
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+<!--The fill-rule attribute defines the algorithm to use to specify the inside part of a shape-->
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polyline points="0,0 50,150 100,75 150,50 200,140 250,140" style="fill:none;stroke:green;stroke-width:3" />
+</svg>
+
+The points attribute defines the list of points (pairs of x and y coordinates) required to draw the polyline
+
+<svg height="180" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" style="fill:yellow;stroke:red;stroke-width:4" />
+</svg>
+
+<svg height="400" width="450" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Draw the paths -->
+    <path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="4" />
+    <path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="4" />
+    <path id="lineMID" d="M 175 200 l 150 0" stroke="green" stroke-width="4" />
+    <path id="lineAC" d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="4" fill="none" />
+
+    <!-- Mark relevant points -->
+    <g stroke="black" stroke-width="3" fill="black">
+        <circle id="pointA" cx="100" cy="350" r="4" />
+        <circle id="pointB" cx="250" cy="50" r="4" />
+        <circle id="pointC" cx="400" cy="350" r="4" />
+    </g>
+
+    <!-- Label the points -->
+    <g font-size="30" font-family="sans-serif" fill="green" text-anchor="middle">
+        <text x="100" y="350" dx="-30">A</text>
+        <text x="250" y="50" dy="-10">B</text>
+        <text x="400" y="350" dx="30">C</text>
+    </g>
+
+</svg>
+
+<svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+    <text x="0" y="15" fill="red">I love SVG!</text>
+    <text x="0" y="35" style="fill:green;font-weight:bold;stroke:red;stroke-width:1">I love W3Schools.com!</text>
+</svg>
+
+<svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="15" fill="red" transform="rotate(30 20,40)">I love SVG!</text>
+</svg>
+
+<svg height="50" width="200" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="20" style="fill:red;">I Love
+        <tspan style="fill:green;font-weight:bold;stroke:red;stroke-width:1">SVG!</tspan>
+    </text>
+</svg>
+
+<svg height="30" width="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
+        <text x="0" y="15" fill="red">I love SVG!</text>
+    </a>
+</svg>
+
+<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="50,10 0,190 100,190" fill="lime" />
+    <rect width="150" height="100" x="120" y="50" fill="blue" />
+    <circle r="45" cx="350" cy="100" fill="red" />
+    <text x="420" y="100" fill="red">I love SVG!</text>
+</svg>
+
+<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="50,10 0,190 100,190" fill="lime" fill-opacity="0.5" />
+    <rect width="150" height="100" x="120" y="50" fill="blue" fill-opacity="50%" />
+    <circle r="45" cx="350" cy="100" fill="red" fill-opacity="0.6" />
+    <text x="420" y="100" fill="red" fill-opacity="70%">I love SVG!</text>
+</svg>
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" fill="lime" fill-rule="evenodd" />
+</svg>
+
+<svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+    <polygon points="100,10 40,198 190,78 10,78 160,198" fill="lime" fill-rule="nonzero" />
+</svg>
