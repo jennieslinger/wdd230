@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images: srcset</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment">
+    <meta name="author" content="Jenni Eslinger">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jenni Eslinger - WDD 230 Web Frontent Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.chandleraz.gov/sites/default/files/styles/event_image/public/veterans_oasis_park.jpg?itok=5EvByp2o">
+    <meta property="og:url" content="https://jennieslinger.github.io/wdd230/">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Tucson Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+
+</body>
+
+</html>
