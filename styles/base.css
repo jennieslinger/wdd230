@@ -35,13 +35,17 @@ nav {
 
 }
 
-
 main {
     background-color: white;
     height: 100%;
     padding: 1rem;
     text-align: center;
     font-size: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 h3 {
