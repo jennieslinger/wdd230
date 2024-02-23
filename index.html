@@ -39,62 +39,69 @@
                 <source srcset="images/hero-small.webp" media="(max-width: 400px)">
                 <img src="images/hero-large.webp" alt="Tucson Arizona Temple" width="960" height="599">
             </picture>
-            <h2>WDD 230: Frontend Development</h2>
-            <section>
-                <div class="card">
-                    <h3>Learning Activities</h3>
-                    <ul>
-                        <li>01:
-                            <a href="lesson02/design.html">Web Design Principles</a>
-                        </li>
-                        <li>02:
-                            <a href="lesson01/media-query.html">CSS Media Queries</a> |
-                            <a href="lesson02/design-principles.html">Design Principles</a>
-                        <li>
-                        <li>03:
-                            <a href="lesson03/images/ScreenshotCSSCombinators.png">CSS Combinators Screenshot</a> |
-                            <a href="https://codepen.io/jennieslinger/pen/Babwmry">CSS Psuedo Elements</a> |
-                            <a href="https://codepen.io/jennieslinger/pen/JjzrOvB">Responsive Menu using "Hamburger"</a>
-                            <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
-                        </li>
-                        <li>04:
-                            <a href="https://codepen.io/jennieslinger/pen/JjzLByG?editors=0100">CSS Psuedo-classes</a> |
-                            <a href="chamber/">Chamber homepage</a>
-                        </li>
-                        <li>05:
-                            <a href="lesson05/bom.html">BOM Collaboration</a>
-                        </li>
-                        <li>06:
-                            <a href="lesson06/images/landscape.webp">WebP</a> |
-                            <a href="lesson06/responsive-images.html">Responsive Images</a>
-                        </li>
-                        <li>07: <a href="">TBD</a></li>
-                        <li>08: <a href="">TBD</a></li>
-                        <li>09: <a href="">TBD</a></li>
-                        <li>10: <a href="">TBD</a></li>
-                    </ul>
-                </div>
-            </section>
-            <br>
-            <section>
-                <div class="card">
-                    <h3>Information</h3>
-                    <p>Chandler, Arizona</p>
-                    <p>Weather</p>
-                    <br>
-                    <p>Page visits:</p>
-                </div>
-            </section>
+        </div>
+        <h2>WDD 230: Frontend Development</h2>
+        <section>
+            <div class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01:
+                        <a href="lesson02/design.html">Web Design Principles</a>
+                    </li>
+                    <li>02:
+                        <a href="lesson01/media-query.html">CSS Media Queries</a> |
+                        <a href="lesson02/design-principles.html">Design Principles</a>
+                    <li>
+                    <li>03:
+                        <a href="lesson03/images/ScreenshotCSSCombinators.png">CSS Combinators Screenshot</a> |
+                        <a href="https://codepen.io/jennieslinger/pen/Babwmry">CSS Psuedo Elements</a> |
+                        <a href="https://codepen.io/jennieslinger/pen/JjzrOvB">Responsive Menu using "Hamburger"</a>
+                        <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
+                    </li>
+                    <li>04:
+                        <a href="https://codepen.io/jennieslinger/pen/JjzLByG?editors=0100">CSS Psuedo-classes</a> |
+                        <a href="chamber/">Chamber homepage</a>
+                    </li>
+                    <li>05:
+                        <a href="lesson05/bom.html">BOM Collaboration</a>
+                    </li>
+                    <li>06:
+                        <a href="lesson06/images/landscape.webp">WebP</a> |
+                        <a href="lesson06/responsive-images.html">Responsive Images</a>
+                    </li>
+                    <li>07:
+                        <a href="lesson07/lazyload.html">Lazy Load</a>
+                    </li>
+                    <li>08: <a href="">TBD</a></li>
+                    <li>09: <a href="">TBD</a></li>
+                    <li>10: <a href="">TBD</a></li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div class="card">
+                <h3>Information</h3>
+                <p>Chandler, Arizona</p>
+                <p>Weather: 70&deg; </p>
+                <br>
+                <p>Number of Visits:<span class="visitsDisplay"></span></p>
+            </div>
+        </section>
+        <br>
+        <section>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13338.142638607324!2d-111.8449346!3d33.3048089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706240979081!5m2!1sen!2sus"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
     <footer>
         &copy;2024 | Jenni Eslinger | Arizona, United States | Last Modified: <p id="today"></p>
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/pageVisits.js"></script>
 </body>
 
 </html>
