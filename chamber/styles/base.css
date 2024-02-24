@@ -24,7 +24,7 @@ h1 {
 
 h2 {
     font-size: 1.2rem;
-    color: white;
+    color: navy;
     text-align: left;
     margin: 1rem;
 }
@@ -86,8 +86,7 @@ main {
 }
 
 h3 {
-    background-color: lightgray;
-    color: darkgreen;
+    color: navy;
     font-size: large;
     font-weight: bold;
 }

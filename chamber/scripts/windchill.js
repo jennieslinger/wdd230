@@ -1,3 +1,5 @@
+Windchill = 35.74 + (0.6215*temperature)-(35.75*speed)
+
 get the two input values of temperature and wind speed,
 
 
