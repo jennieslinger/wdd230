@@ -279,3 +279,21 @@ input:checked+.slider:before {
         /* just a wayfinding symbol for the user */
     }
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    border: navy;
+    border-style: ridge;
+}
+
+.grid-item {
+    font-size: x-large;
+    font-weight: bold;
+    color: navy;
+}
+
+.p {
+    color: navy;
+}
