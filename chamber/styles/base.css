@@ -294,6 +294,10 @@ input:checked+.slider:before {
     color: navy;
 }
 
-.p {
+.label {
+    color:navy;
+    font-weight: bold;
+}
+#visit {
     color: navy;
 }
