@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Project</title>
+    <meta name="description" content="Chamber of Commerce site project for WDD 230">
+    <meta name="author" content="Jenni Eslinger">
+    <meta property="og:title"
+        content="Jenni Eslinger - Chamber of Commerce Project for WDD 230 Web Frontent Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.tripsavvy.com/thmb/KCqofJyDSFH3Ai39B5sSPFojguE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/mount-humphreys-at-sunset-overlooks-the-area-around-flagstaff-arizona-1182550808-f665bf36812e488da2af3ce47a8520f3.jpg">
+    <meta property="og:url" content="https://jennieslinger.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="chamberfavicon.ico">
+
+</head>
+
+<body>
+    <header>
+        <h1>Flagstaff Chamber of Commerce</h1>
+
+        <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" class="active">Home</a>
+            <a href="lesson03/chamber-site-plan.html" title="Site Plan">Site Plan</a>
+            <a href="discover.html" title="Discover">Discover</a>
+            <a href="#" title="Directory">Directory</a>
+            <a href="#" title="Events">Events</a>
+            <a href="join.html" title="Join">Join</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Join the Chamber of Commerce</h1>
+        <form action="thankyou.html" method="get" class="wf1">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>*required</p>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Title or Position* <input type="text" name="title" id="title" required
+                        pattern="[A-Za-z]{7}"></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label>Mobile Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234"
+                        required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business Organization Name* <input type="text" name="bname" id="bname" required></label>
+                <label>Business Organization Description <input type="text" name="description" id="description"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="checkbox" name="membership" value="nonprofit">Non-Profit Membership</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                <label><input type="hidden" name="date" id="date"></label>
+            </fieldset>
+
+            <input type="submit" value="Join Now!">
+
+        </form>
+
+        <aside>
+            <h2>Membership Levels</h2>
+            <section>
+                <div>
+                    <h3>Bronze Membership</h3>
+                    <h4>Cost:</h4>
+                    <p>This level is usually the most affordable option, with an annual fee ranging from $250 to $500.
+                    </p>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Basic listing in the Chamber's online directory.
+                        </li>
+                        <li>Access to Chamber events at a discounted rate.
+                        </li>
+                        <li>Networking opportunities with other members.
+                        </li>
+                        <li>Subscription to Chamber newsletters and updates.
+                        </li>
+                        <li>Opportunity to participate in Chamber committees or task forces.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Silver Membership</h3>
+                    <h4>Cost:</h4>
+                    <p>The annual fee for a silver membership generally ranges from $500 to $1,000.</p>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Enhanced listing in the Chamber's online directory with a logo and additional information
+                            about the organization.
+                        </li>
+                        <li>Increased visibility through sponsorship opportunities at Chamber events.
+                        </li>
+                        <li>Access to educational seminars or workshops at no extra cost.
+                        </li>
+                        <li>Invitations to exclusive networking events or luncheons.
+                        </li>
+                        <li>Priority consideration for speaking opportunities at Chamber functions.
+                        </li>
+                        <li>Recognition as a silver-level member in Chamber publications and communications.
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Gold Membership</h3>
+                    <h4>Cost:</h4>
+                    <p>Gold membership is the highest tier and typically ranges from $1,000 to $2,500 annually.</p>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Premium placement in the Chamber's online directory with a featured listing.
+                        </li>
+                        <li>Exclusive sponsorship opportunities for major Chamber events or initiatives.
+                        </li>
+                        <li>VIP access to Chamber events, including reserved seating and special receptions.
+                        </li>
+                        <li>Access to customized business development support or consulting services offered by the
+                            Chamber.
+                        </li>
+                        <li>Complimentary tickets to Chamber galas or other signature events.
+                        </li>
+                        <li>Priority referral services and introductions to key stakeholders or potential partners.
+                        </li>
+                        <li>Prominent recognition as a gold-level member in all Chamber communications, including press
+                            releases and social media.
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Non-Profit Membership</h3>
+                    <p>These benefits are indicative and may vary depending on the specific Chamber of Commerce.
+                        Non-profit organizations can choose the membership level that best aligns with their budget and
+                        strategic objectives. It's essential for organizations to consider their networking needs,
+                        visibility goals, and capacity to take advantage of the resources offered at each level when
+                        deciding on their membership tier.
+                </div>
+            </section>
+        </aside>
+
+    </main>
+    <footer>
+        &copy;2024 | Jenni Eslinger | Project for WDD 230 | Last Modified: <p id="today"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hambutton.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>
