@@ -1,0 +1,47 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Web Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson01/media-query.html",
+                    "title": "CSS Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/ScreenshotCSSCombinators.png",
+                    "title": "CSS Combinators Screenshot"
+                },
+                {
+                    "url": "https://codepen.io/jennieslinger/pen/Babwmry",
+                    "title": "CSS Psuedo Elements"
+                },
+                {
+                    "url": "https://codepen.io/jennieslinger/pen/JjzrOvB",
+                    "title": "Responsive Menu Using Hamburger"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        }
+    ]
+}
