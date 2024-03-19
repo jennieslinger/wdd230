@@ -5,12 +5,16 @@ const cards = document.querySelector("#cards");
 const displayProphets = (prophets) => {
     prophets.forEach(prophet => {
         let section = document.createElement("section");
+
         let fullName = document.createElement("h2");
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+
         let birthdate = document.createElement("p");
         birthdate.textContent = `Birthdate: ${prophet.birthdate}`;
+
         let birthplace = document.createElement('p');
         birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        
         let portrait = document.createElement("img");
         portrait.setAttribute("src", prophet.imageurl);
         portrait.setAttribute("alt", fullName);
