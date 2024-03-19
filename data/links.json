@@ -42,6 +42,85 @@
                     "title": "Chamber Site Plan"
                 }
             ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/jennieslinger/pen/JjzLByG?editors=0100",
+                    "title": "CSS Psuedo-classes"
+                },
+                {
+                    "url": "chamber/",
+                    "title": "Chamber Homepage"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "BOM Collaboration"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/Form-start/index.html",
+                    "titl": "HTML Forms Build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Latter-day Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10, weather.html",
+                    "title": "OpenWeatherAPI"
+                }
+            ]
         }
     ]
 }
