@@ -39,8 +39,8 @@
 
         <button id="menu"></button>
         <nav class="navigation">
-            <a href="#" title="Home" class="active">Home</a>
-            <a href="lesson03/chamber-site-plan.html" title="Site Plan">Site Plan</a>
+            <a href="index.html" title="Home" class="active">Home</a>
+            <a href=".lesson03/chamber-site-plan.html" title="Site Plan">Site Plan</a>
             <a href="discover.html" title="Discover">Discover</a>
             <a href="directory.html" title="Directory">Directory</a>
             <a href="#" title="Events">Events</a>
@@ -48,13 +48,23 @@
         </nav>
     </header>
     <main>
+        <div class="container">
+            <div class="banner">
+                <div class="banner-text">
+                    <span></span>
+                    <h2>Meet & Greet - Wednesday - 7:00 p.m.<button type="button" class="btn-close"
+                            id="btn-close">❌</button></span>
+                </div>
+            </div>
+        </div>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-                <img src="images/hero-large.webp" alt="Chamber of Commerce" width="1500" height="1000">
+                <!--<source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">-->
+                <img src="images/hero-san-francisco-peaks.webp" alt="San Francisco Peaks" width="1500" height="1000">
             </picture>
         </div>
+
 
         <div class="card">
             <h2>Become a member today!</h2>
@@ -70,11 +80,14 @@
         </div>
 
         <div class="card">
-            <h2 class="city">Flagstaff, AZ</h2>
+            <h2 class="city">Flagstaff, AZ Current Weather</h2>
             <ul>
-                <li class="temperature">Current temperature: 39&deg; </li>
-                <li class="windspeed">Windspeed: 13 mph</li>
-                <li class="windchill">Windchill: <span id="windchill"></span>&deg;</li>
+                <li id="current-temp"></li>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                </figure>
+                <!--<li class="windspeed">Windspeed: 13 mph</li>
+                <li class="windchill">Windchill: <span id="windchill"></span>&deg;</li>-->
             </ul>
         </div>
 
@@ -83,12 +96,7 @@
             <!--<img src="" alt="">-->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium hic laudantium, iste rerum
                 quod inventore tempora saepe sint. Voluptate pariatur esse nobis ut inventore modi architecto cum,
-                placeat delectus, sequi ea repudiandae explicabo quas dolorem enim quidem quos exercitationem odio
-                rem aliquid, perferendis molestias eligendi nisi molestiae. Quia, perferendis at doloribus delectus
-                a modi nulla. Dolorem quas reiciendis, deserunt laborum alias saepe, ex amet, quo fugiat dolore in
-                temporibus numquam est voluptatem animi minus incidunt. Id illo enim itaque ipsa ad aliquam dolore
-                aperiam maxime laborum quaerat voluptate distinctio rerum, mollitia delectus voluptas nostrum
-                possimus ullam obcaecati doloremque ea.</p>
+                placeat delectus.</p>
         </div>
 
     </main>
@@ -100,6 +108,7 @@
     <script src="scripts/hambutton.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 
