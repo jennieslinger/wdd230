@@ -23,8 +23,8 @@ function displayMembers(data) {
         image.setAttribute("src", member.image);
         image.setAttribute("alt", name.textContent);
         image.setAttribute("loading", "lazy");
-        //image.setAttribute("width", 200);
-        //image.setAttribute("height", 325);
+        image.setAttribute("width", 200);
+        image.setAttribute("height", 200);
 
         let additionalInfo = document.createElement("p");
         additionalInfo.textContent = member.additionalInfo;
