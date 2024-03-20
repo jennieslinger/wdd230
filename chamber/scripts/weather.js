@@ -1,11 +1,11 @@
 //key = d772ce126aa0f794c9cbc6e9a63c8e68;
-//Trier, Germany lat & lon = 49.74804729798613, 6.634341752773694
+//Flagstaff lat & lon = 35.198322916347834, -111.65465089143264
 
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.63&units=imperial&appid=d772ce126aa0f794c9cbc6e9a63c8e68';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=35.20&lon=-111.65&units=imperial&appid=d772ce126aa0f794c9cbc6e9a63c8e68';
 
 async function apiFetch() {
     try {
