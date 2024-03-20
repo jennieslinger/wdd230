@@ -6,7 +6,7 @@
                 "address": "5981 Goodwin Meadow, Flagstaff, AZ 86001",
                 "phoneNumber": "1115551234",
                 "url": "https://www.nitzchegroup.com",
-                "image": "chamber/images/HannaMatthews.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/HannaMatthews.webp",
                 "membershipLevel": "Gold",
                 "additionalInfo": "Nitzche Group",
                 "emailAddress": "matthew.hanna@nitzche.com"
@@ -16,7 +16,7 @@
                 "address": "3875 Leila Branch, Flagstaff, AZ 86002",
                 "phoneNumber": "2225552345",
                 "url": "https://www.clllc.com",
-                "image": "chamber/images/DerekBaldwin.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/DerekBaldwin.webp",
                 "membershipLevel": "Silver",
                 "additionalInfo": "Carter & Little, LLC",
                 "emailAddress": "dbaldwin@clllc.com"
@@ -26,7 +26,7 @@
                 "address": "42386 Ferry Plains, Flagstaff, AZ 86002",
                 "phoneNumber": "3335553456",
                 "url": "https://www.bergeinc.com",
-                "image": "chamber/images/NatalieDayton.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/NatalieDayton.webp",
                 "membershipLevel": "Gold",
                 "additionalInfo": "Berge, Inc.",
                 "emailAddress": "natdat@berge.com"
@@ -36,7 +36,7 @@
                 "address": "206 Jonah Hill Road, Flagstaff, AZ 86001",
                 "phoneNumber": "4445554567",
                 "url": "https://www.manncandt.com",
-                "image": "chamber/images/LillianBerens.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/LillianBerens.webp",
                 "membershipLevel": "Silver",
                 "additionalInfo": "Mann Conduct & Testing",
                 "emailAddress": "l.berens@mann.com"
@@ -46,7 +46,7 @@
                 "address": "738 Historic Route 66, Flagstaff, AZ 86003",
                 "phoneNumber": "5555555678",
                 "url": "https://www.huglegal.com",
-                "image": "chamber/images/SonyaEdison.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/SonyaEdison.webp",
                 "membershipLevel": "Bronze",
                 "additionalInfo": "Hills, Ulrich, & Grimes, Ltd.",
                 "emailAddress": "sedison@huglegal.com"
@@ -56,7 +56,7 @@
                 "address": "5758 Beahan Center, Flagstaff, AZ 86003",
                 "phoneNumber": "6665556789",
                 "url": "https://www.readmoreflagstaff.com",
-                "image": "chamber/images/ClintFerdo.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/ClintFerdo.webp",
                 "membershipLevel": "Bronze",
                 "additionalInfo": "Daybreak Booksales",
                 "emailAddress": "info@readmore.com"
@@ -66,7 +66,7 @@
                 "address": "8699 Harlan Avenue, Flagstaff, AZ 86001",
                 "phoneNumber": "7775557891",
                 "url": "https://www.carrollgroup.com",
-                "image": "chamber/images/ColeGyles.webp",
+                "image": "https://jennieslinger.github.io/wdd230/chamber/images/ColeGyles.webp",
                 "membershipLevel": "Bronze",
                 "additionalInfo": "Carroll Group",
                 "emailAddress": "coleg@carrollgroup.com"

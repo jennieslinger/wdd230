@@ -1,42 +1,69 @@
-const url = "https://jennieslinger.io.github/WDD230/chamber/data/members.json";
+const baseURL = "https://jennieslinger.github.io/wdd230";
 
-const cards = document.querySelector("#cards");
+const membersURL = "https://jennieslinger.github.io/wdd230/chamber/data/members.json";
 
-const displayProphets = (prophets) => {
-    prophets.forEach(prophet => {
+const cards = document.querySelector(".members");
+console.log(cards)
+
+function displayMembers(data) {
+
+    const members = data.members.member;
+
+    members.forEach(member => {
+
         let section = document.createElement("section");
 
-        let fullName = document.createElement("h2");
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        let name = document.createElement("h2");
+        name.textContent = member.name;
 
-        let birthdate = document.createElement("p");
-        birthdate.textContent = `Birthdate: ${prophet.birthdate}`;
+        let membershipLevel = document.createElement("p");
+        membershipLevel.textContent = member.membershipLevel;
 
-        let birthplace = document.createElement('p');
-        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-        
-        let portrait = document.createElement("img");
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", fullName);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", 200);
-        portrait.setAttribute("height", 325);
+        let image = document.createElement("img");
+        image.setAttribute("src", member.image);
+        image.setAttribute("alt", name.textContent);
+        image.setAttribute("loading", "lazy");
+        //image.setAttribute("width", 200);
+        //image.setAttribute("height", 325);
 
-        section.appendChild(fullName);
-        section.appendChild(birthdate);
-        section.appendChild(birthplace);
-        section.appendChild(portrait);
+        let additionalInfo = document.createElement("p");
+        additionalInfo.textContent = member.additionalInfo;
 
+        let address = document.createElement("p");
+        address.textContent = member.address;
 
-        cardsElement.appendChild(section)
+        let phoneNumber = document.createElement("p");
+        phoneNumber.textContent = member.phoneNumber;
+
+        let emailAddress = document.createElement("p");
+        emailAddress.textContent = member.emailAddress;
+
+        section.appendChild(name);
+        section.appendChild(membershipLevel);
+        section.appendChild(image);
+        section.appendChild(additionalInfo);
+        section.appendChild(address);
+        section.appendChild(phoneNumber);
+        section.appendChild(emailAddress);
+
+        cards.appendChild(section);
     });
-}
+};
 
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.prophets);
-    displayProphets(data.prophets);
-}
+getMemberData();
 
-getProphetData();
+async function getMemberData() {
+
+    try {
+        const response = await fetch(membersURL);
+        if (!response.ok) {
+            throw new Error("Could not fetch data");
+        }
+        const data = await response.json()
+        console.log(data);
+        displayMembers(data);
+    }
+    catch (error) {
+        console.error(error);
+    }
+}
