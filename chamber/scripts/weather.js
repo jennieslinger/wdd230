@@ -12,8 +12,8 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data); //temporary
-            displayResults(data);
+            const dailyForecast = data.daily.slice(1, 4);
+            displayResults(dailyForecast);
         } else {
             throw Error(await response.text());
         }
@@ -24,11 +24,18 @@ async function apiFetch() {
 
 apiFetch()
 
-function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = 'https://openweathermap.org/img/w/${data.weather[0].icon}.png';
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
+function displayResults(dailyForecast) {
+    dailyForecast.forEach((day, index) => {
+        const date = new Date(day.dt * 1000);
+        const dayOfWeek = date.toLocaleDateString('en-US', { weekday: "long" });
+        const temp = `${day.temp.day}&deg;F`;
+        const iconSrc = `https://openweathermap.org/omg/w/${day.weather[0].icon}.png`;
+        const desc = data.weather[0].description;
+
+        document.querySelector(`#day-${index + 1}-name`).textContent = dayOfWeek;
+        document.querySelector(`#day-${index + 1}-temp`).innerHTML = temp;
+        document.querySelector(`#day-${index + 1}-icon`).setAttribute('src', iconSrc);
+        document.querySelector(`#day-${index + 1}-icon`).setAttribute('src', desc);
+        document.querySelector(`#day-${index + 1}-name`).textContent = desc;
+    });
 }
