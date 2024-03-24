@@ -5,7 +5,8 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=35.20&lon=-111.65&units=imperial&appid=d772ce126aa0f794c9cbc6e9a63c8e68';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=35.20&lon=-111.65&units=imperial&exclude=current,minutely,hourly,alerts&appid=d772ce126aa0f794c9cbc6e9a63c8e68';
+
 
 async function apiFetch() {
     try {
@@ -30,12 +31,17 @@ function displayResults(dailyForecast) {
         const dayOfWeek = date.toLocaleDateString('en-US', { weekday: "long" });
         const temp = `${day.temp.day}&deg;F`;
         const iconSrc = `https://openweathermap.org/omg/w/${day.weather[0].icon}.png`;
-        const desc = data.weather[0].description;
+        const desc = day.weather[0].description;
 
         document.querySelector(`#day-${index + 1}-name`).textContent = dayOfWeek;
         document.querySelector(`#day-${index + 1}-temp`).innerHTML = temp;
         document.querySelector(`#day-${index + 1}-icon`).setAttribute('src', iconSrc);
-        document.querySelector(`#day-${index + 1}-icon`).setAttribute('src', desc);
+        document.querySelector(`#day-${index + 1}-icon`).setAttribute('alt', desc);
         document.querySelector(`#day-${index + 1}-name`).textContent = desc;
     });
 }
+
+window.addEventListener('load', async () => {
+    const weatherData = await fetchWeatherData();
+    updateWeatherCard(weatherData);
+});
