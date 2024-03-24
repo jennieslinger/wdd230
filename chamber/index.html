@@ -40,21 +40,24 @@
         <label class="switch">
             <input type="checkbox" id="darkModeToggle" aria-label="Dark Mode Toggle">
             <span class="slider round">
-                ::before
             </span>
         </label>
         <button id="menu" title="Main Menu"></button>
         <div id="banner">
-            <span>Come out and meet other members of the Chamber of Commerce!<br> Meet and Greet event this Wedensday at
-                7:00 PM!</span>
-            <button onclick="document.getElementbyId('banner')">X</button>
+            <span>
+                Meet and Greet event this Wednesday at
+                7:00 PM!
+                <br>
+                Come meet other members of the Chamber of Commerce!
+            </span>
+            <button onclick="document.getElementbyId('banner').style.display='none';">X</button>
         </div>
         <section>
             <nav class="navigation">
                 <a href="index.html" title="Home" class="active">Home</a>
                 <a href="discover.html" title="Discover">Discover</a>
                 <a href="directory.html" title="Directory">Directory</a>
-                <a href="join.html" title="Join Us">Join Us</a>
+                <a href="join.html" title="Join">Join</a>
             </nav>
         </section>
         <section>
@@ -68,21 +71,36 @@
             </div>
         </section>
     </header>
-    <main>
-        <div class="card">
-            <h2>Become a member today!</h2>
-            <p></p>
-            <button>Join Now</button>
-        </div>
-
-        <div class="card">
-            <h2>Events</h2>
+    <main class="main-container">
+        <section class="events-card">
+            <h2>Upcoming Events</h2>
             <ul>
-                <li>This Wednesday @ 7 pm - Meet & Greet</li>
+                <li>
+                    <h4>Meet and Greet</h4>
+                    <p>Date: March 20, 2024</p>
+                    <p>Time: 5:00 - 7:00 PM </p>
+                    <p>Location: Little American Hotel Conference Center</p>
+                    <p>Description: Meet with greet local businesses and members in the area.</p>
+                </li>
+                <br>
+                <li>
+                    <h4>Networking Breakfast</h4>
+                    <p>Date: March 27, 2024</p>
+                    <p>Time: 7:00 - 9:00 AM </p>
+                    <p>Location: </p>
+                    <p>Description: Join us for a breakfast where local businesses can connect and collaborate.</p>
+                </li>
+                <br>
+                <li>
+                    <h4>Business Expo</h4>
+                    <p>Date: May 4, 2024</p>
+                    <p>Time: 7:00 AM - 5:00 PM </p>
+                    <p>Location: Coconino County Fairgrounds </p>
+                    <p>Description: Showcase your business and explore opportunities at our annual business expo.</p>
+                </li>
             </ul>
-        </div>
-
-        <div class="card">
+        </section>
+        <section class="weather-card">
             <h2 class="city">Flagstaff, AZ Current Weather</h2>
             <ul>
                 <li id="current-temp"></li>
@@ -90,18 +108,25 @@
                     <img id="weather-icon" src="" alt="">
                 </figure>
                 <!--<li class="windspeed">Windspeed: 13 mph</li>
-                <li class="windchill">Windchill: <span id="windchill"></span>&deg;</li>-->
+                    <li class="windchill">Windchill: <span id="windchill"></span>&deg;</li>-->
             </ul>
-        </div>
+        </section>
+        <section class="spotlight-card">
+            <h2>Spotlight on FLG X Adventure Course</h2>
+            <img src="images/ropes-course.webp" alt="FLG X Adventure Course">
+            <p>FLG X (Flagstaff Extreme) provides entertainment for the communitity year round. FLG X strives to
+                preserve the local land through various conservation efforts. Their goal is to leave the forest in a
+                better state than when it was found. Check them out and show support to a fellow member!</p>
+            <p>Location: Fort Tuthill County Park </p>
+            <p>Call or text: 1(888)259-0125</p>
+            <a href="https://www.flagstaffextreme.com" target="_blank">Visit Website</a>
 
-        <div class="card">
-            <h2>Spotlight on Local Business</h2>
-            <!--<img src="" alt="">-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium hic laudantium, iste rerum
-                quod inventore tempora saepe sint. Voluptate pariatur esse nobis ut inventore modi architecto cum,
-                placeat delectus.</p>
-        </div>
-
+        </section>
+        <section class="member-card">
+            <h2>Join today for exclusive member benefits!</h2>
+            <p></p>
+            <button>Join Now</button>
+        </section>
     </main>
     <footer>
         &copy;2024 | Jenni Eslinger | Project for WDD 230 | Last Modified: <p id="today"></p>
