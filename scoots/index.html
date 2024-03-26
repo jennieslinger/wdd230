@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenni Eslinger - WDD 230 - Web Frontend Development Final Project: Scoots</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development final project of Jenni Eslinger">
+    <meta name="author" content="Jenni Eslinger">
+    <!--<link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Jenni Eslinger - WDD 230 Web Frontent Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.chandleraz.gov/sites/default/files/styles/event_image/public/veterans_oasis_park.jpg?itok=5EvByp2o">
+    <meta property="og:url" content="https://jennieslinger.github.io/wdd230/">-->
+</head>
+
+<body>
+    <header>
+        <h1><img src="images/profile.webp" alt="Profile picture" width="100"><br> Scoots </h1>
+
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html" title="Home">Home</a>
+        <a href="rentals.html" title="Rentals">Rentals</a>
+        <a href="reserve.html" title="Reserve">Reserve</a>
+        <a href="contact.html" title="Contact">Contact</a>
+    </nav>
+    <!--banner-->
+    <main>
+        <h2>Experience Conzumel with the wind in your hair!</h2>
+        <section class="weather">
+            <div class="card">
+                <h3>Information</h3>
+                <p>Cozumel, Mexico</p>
+                <p>Weather: 83&deg; </p>
+            </div>
+        </section>
+        <section class="rental-summary"></section>
+        <section class="contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@scootscozumel.com</p>
+            <p>Phone: 987-555-1234</p>
+        </section>
+        <section class="map">
+            <!--<iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13338.142638607324!2d-111.8449346!3d33.3048089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706240979081!5m2!1sen!2sus"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+        </section>
+    </main>
+    <footer>
+        &copy;2024 | Jenni Eslinger | Arizona, United States | Last Modified: <p id="today"></p>
+    </footer>
+
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
+
+he Home page is a contemporary, exciting landing page providing images of the island and rental facilities and must
+include the following:
+A call to action to make a rental reservation.
+Readily available navigation and contact information.
+Summary information about all the types of rentals.
+Social media links (a general link is OK)
+Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
+✔️ The current temperature
+✔️ The current humidity
+✔️ The next day's forecasted temperature at 15:00 (3:00pm).
+✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and
+the associated weather icon.
+There may likely only be one data point under weather but your code should display any and all if provided by the API.
+Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.

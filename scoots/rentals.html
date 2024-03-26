@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Rentals</h1>
+
+        <select id="sortBy" title="Choose a search filter.">
+            <option value="" disabled selected>Filter Rentals</option>
+            <option value="type">Type</option>
+            <option value="make">Make</option>
+            <option value="model">Model</option>
+            <option value="persons">Persons</option>
+            <option value="all">No Filter</option>
+        </select>
+
+        <div id="results">
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="scripts/rentals.js"></script>
+</body>
+
+</html>
+
+<!--The Rentals page describes the available rental options and prices with images.
+The prices displayed on the site must be obtained from a JSON data source of your own making.
+Store this .json file in a data 📁 folder in this project folder.
+Incorporate a data table in your HTML structure to display some portion of this information.-->

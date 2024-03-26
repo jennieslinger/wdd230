@@ -1,0 +1,52 @@
+{
+    "rentals": [
+        {
+            "type": "scooter",
+            "make": "Honda",
+            "model": "Metropolitan (49cc)",
+            "persons": "1",
+            "addInfo": null,
+            "img": "#"
+        },
+        {
+            "type": "scooter",
+            "make": "Honda",
+            "model": "Dio (cc110)",
+            "persons": "2",
+            "addInfo": null,
+            "img": "#"
+        },
+        {
+            "type": "scooter",
+            "make": "Honda",
+            "model": "PCX150 (cc149)",
+            "persons": "2",
+            "addInfo": null,
+            "img": "#"
+        },
+        {
+            "type": "ATV",
+            "make": "Honda",
+            "model": "Pioneer 1000",
+            "persons": "4",
+            "addInfo": null,
+            "img": "#"
+        },
+        {
+            "type": "Jeep",
+            "make": "Jeep",
+            "model": "Wrangler 4 door",
+            "persons": "5",
+            "addInfo": "manuel with A/C",
+            "img": "#"
+        },
+        {
+            "type": "Jeep",
+            "make": "Jeep",
+            "model": "Wrangler 2 door",
+            "persons": "4",
+            "addInfo": "manuel, open air",
+            "img": "#"
+        }
+    ]
+}
