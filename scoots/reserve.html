@@ -8,28 +8,87 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
 
-</body>
+    <body>
+        <header>
+            <h1><img src="images/scootslogo.svg" alt="logo" width="250"><br> ~Scoots~</h1>
+        </header>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home">~Home~</a>
+            <a href="rentals.html" title="Rentals">~Rentals~</a>
+            <a href="reserve.html" title="Reserve">~Reserve~</a>
+            <a href="contact.html" title="Contact">~Contact~</a>
+        </nav>
+
+        <main>
+            <form>
+                <div id="formmessage"></div>
+                <h1>Reserve your ride now!</h1>
+                <form action="record.html" method="get" class="wfi">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>*required</p>
+                        <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                                required></label>
+                        <label>Phone* <input type="tel" name="phone" id="phone" placeholder="1235551234"
+                                required></label>
+                        <label>Home Country or State <input type="text" name="homeland"></label>
+                        <label>Cruise line (if applicable)<input type="text" name="cruise"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Rental Information<legend>
+                                <label>From<input type="date" id="fromdate" name="fromdate" required></label>
+                                <label>To<input type="date" id="todate" name="todate" required></label>
+
+                                <label><input type="radio" name="vehicle" value="Honda Metropolitan Scooter">Honda
+                                    Metropolitan Scooter</label>
+                                <label><input type="radio" name="vehicle" value="Honda Dio Scooter">Honda Dio
+                                    Scooter</label>
+                                <label><input type="radio" name="vehicle" value="Honda PCX150 Scooter">Honda PCX150
+                                    Scooter</label>
+                                <label><input type="radio" name="vehicle" value="Honda Pioneer 1000 Scooter">Honda
+                                    Pioneer
+                                    1000 Scooter</label>
+                                <label><input type="radio" name="vehicle" value="Jeep Wrangler 4 door">Jeep Wrangler 4
+                                    door</label>
+                                <label><input type="radio" name="vehicle" value="Jeep Wrangler 2 door">Jeep Wrangler 2
+                                    door</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Comments, requests or special accomidations</legend>
+                        <p>Want to schedule a drop-off? Leave the location below:</p>
+                        <label>
+                            <textarea type="text" name="description" id="description" placeholder="Leave comment here"
+                                rows="5" cols="50"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Rental Services and Agreements</legend>
+                        <ul>
+                            <li>A $50 security deposit is required to confirm reservations.</li>
+                            <li>A valid drivers license is required in hand at the time of rental.</li>
+                            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                            <li>Fuel charge is not included.</li>
+                            <li>Unlimited mileage.</li>
+                            <li>Liability insurance is included.</li>
+                            <li>Damage insurance is available for purchase.</li>
+                            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                            <li>Rentals may be returned to either physical location. </li>
+                        </ul>
+                        <label><input type="checkbox" name="agreement" id="agreement" required>I have read and agree to
+                            the
+                            Rental Services and Agreements.*</label>
+                    </fieldset>
+                    <input type="submit" value="Book Now">
+                </form>
+        </main>
+
+    </body>
 
 </html>
-The Reservations page that contains:
-rental agreement information, and
-a valid form that collects rental details such as the date, period, rental type, number, phone number, name, email, home
-state or country, cruise line if applicable, and special accommodations/comments such as the need and location of a
-drop-off request.
-Use CSS Grid and/or CSS Flex to design the layout.
-
-Rental Services and Agreements
-A $50 security deposit is required to confirm reservations.
-A valid drivers license is required in hand at the time of rental.
-No one under the age of 12 years of age are allowed to ride on the scooters.
-Fuel charge is not included.
-Unlimited mileage.
-Liability insurance is included.
-Damage insurance is available for purchase.
-Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
-Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.
-Rentals may be returned to either physical location.
