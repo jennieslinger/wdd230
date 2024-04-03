@@ -7,7 +7,8 @@
     <title>Jenni Eslinger - WDD 230 - Web Frontend Development Final Project: ~Scoots~</title>
     <meta name="description" content="WDD 230 - Web Frontend Development final project of Jenni Eslinger">
     <meta name="author" content="Jenni Eslinger">
-    <link rel="stylesheet" href="styles/normalize.css">   <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
@@ -16,8 +17,7 @@
     <link rel="icon" href="scootslogo.ico">
     <meta property="og:title" content="~Scoots~ final project for Jenni Eslinger - WDD 230 Web Frontent Development">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://cdn.pixabay.com/photo/2016/12/14/03/33/dog-1905543_960_720.jpg">
+    <meta property="og:image" content="images/scootslogo.svg">
     <meta property="og:url" content="https://jennieslinger.github.io/wdd230/scoots/index.html">
 </head>
 
@@ -35,7 +35,20 @@
     </nav>
     <!--banner-->
     <main>
-        <h2>Experience Conzumel with the wind in your hair!</h2>
+
+        <div class="scoots">
+            <h2>The best way to experience Cozumel!
+                <br>
+                Rent your Scoot now!
+            </h2>
+        </div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cozumel-hero-small.webp" media="(max-width: 400px)">
+                <source srcset="images/cozumel-hero-medium.webp" media="(max-width: 600px)">
+                <img src="images/cozumel-hero-large.webp" alt="Scoots de Cozumel" width="960" height="599">
+            </picture>
+        </div>
         <section class="weather">
             <div class="card">
                 <h3>Current Temperature</h3>
@@ -43,17 +56,24 @@
                 <p>83&deg; </p>
             </div>
         </section>
-        <section class="rental-summary"></section>
+        <section class="rental-summary">
+            <p>Whether you are traveling alone or with a group, we have the perfect scoot for you</p>
+            <div class="scootimgs">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </section>
         <section class="contact">
             <h4>Contact Us</h4>
             <p>Email: info@scootscozumel.com</p>
-            <p>Phone: 987-555-1234</p>
+            <p>Phone: 1-987-555-1234</p>
         </section>
         <section class="map">
-            <!--<iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13338.142638607324!2d-111.8449346!3d33.3048089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706240979081!5m2!1sen!2sus"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
@@ -67,7 +87,9 @@
 
 he Home page is a contemporary, exciting landing page providing images of the island and rental facilities and must
 include the following:
+
 A call to action to make a rental reservation.
+
 Readily available navigation and contact information.
 Summary information about all the types of rentals.
 Social media links (a general link is OK)

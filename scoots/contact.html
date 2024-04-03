@@ -4,27 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jenni Eslinger - WDD 230 - Web Frontend Development Final Project: ~Scoots~</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development final project of Jenni Eslinger">
+    <meta name="author" content="Jenni Eslinger">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="scootslogo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta property="og:title" content="~Scoots~ final project for Jenni Eslinger - WDD 230 Web Frontent Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/scootslogo.svg">
+    <meta property="og:url" content="https://jennieslinger.github.io/wdd230/scoots/index.html">
 </head>
 
 <body>
     <header>
-        <h1>Locations</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home">~Home~</a>
+            <a href="rentals.html" title="Rentals">~Rentals~</a>
+            <a href="reserve.html" title="Reserve">~Reserve~</a>
+            <a href="contact.html" title="Contact">~Contact~</a>
+        </nav>
+
     </header>
     <main>
+        <h1>Locations</h1>
         <section class="location-card">
             <h2>El Centro de Cozumel</h2>
             <p>near the Playa del Carmen-Cozumel Ferry Dock</p>
-            <iframe src="" frameborder="0"></iframe>
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
         </section>
         <section class="location-card">
             <h2>Terminal Puerta Maya</h2>
             <p>convienent location for cruise lines and patrons</p>
-            <iframe src="" frameborder="0"></iframe>
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5615.24895227218!2d-86.97389106284155!3d20.47962005685254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1712101349706!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
         </section>
         <section class="contact-card">
-            <h3>phone</h3>
-            <h3>social media</h3>
+            <h3>Phone: 1-987-555-1234</h3>
+            <h3>Email: info@scootscozumel.com</h3>
+            <div class="socials">
+                <h3>Follow us</h3>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://www.tiktok.com" class="fa fa-tiktok"></a>
+            </div>
         </section>
         <section class="comment-card">
             <form>
@@ -52,8 +91,3 @@
 </body>
 
 </html>
-
-The Contact page will contain:
-essential contact information,
-an embedded Google map showing the two locations on Cozumel, and
-a basic contact us form with name, email, and comment.
