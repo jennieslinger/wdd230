@@ -42,7 +42,7 @@ getProphetData();*/
 document.addEventListener("DOMContentLoaded", function () {
 
     // Declare and initialize global variables
-    const url = "https://jennieslinger.github.io/WDD230/scoots/rentals/rentals.json";
+    const url = "https://jennieslinger.github.io/WDD230/scoots/data/rentals.json";
     const rentalElement = document.querySelector("#results");
     console.log(rentalElement);
     let rentalList = [];
