@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/larger.css">
+    <!--<link rel="stylesheet" href="styles/larger.css">-->
     <link rel="icon" href="scootslogo.ico">
     <meta property="og:title" content="~Scoots~ final project for Jenni Eslinger - WDD 230 Web Frontent Development">
     <meta property="og:type" content="website">
@@ -24,9 +24,12 @@
 <body>
     <header>
         <h1><img src="images/scootslogo.svg" alt="logo" width="250"><br> ~Scoots~</h1>
-
     </header>
     <button id="menu"></button>
+    <div id="banner">
+        <span>Today's high temperature is <span id="temp-max"></span>
+            <button onclick="document.getElementbyId('banner').style.display='none';">X</button>
+    </div>
     <nav class="navigation">
         <a href="index.html" title="Home">~Home~</a>
         <a href="rentals.html" title="Rentals">~Rentals~</a>
@@ -51,9 +54,14 @@
         </div>
         <section class="weather">
             <div class="card">
-                <h3>Current Temperature</h3>
-                <p>Cozumel, Mexico</p>
-                <p>83&deg; </p>
+                <h3>Current Weather</h3>
+                <p>Temperature:<span id="current-temp"></span></p>
+                <p>Humidity:<span id="current-humid"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Temperature Max:<span id="temp-max"></span></p>
             </div>
         </section>
         <section class="rental-summary">
@@ -68,6 +76,9 @@
             <h4>Contact Us</h4>
             <p>Email: info@scootscozumel.com</p>
             <p>Phone: 1-987-555-1234</p>
+            <p>Socials:</p>
+            <p>tiktok</p> <!--ENTER SOCIAL ICONS HERE-->
+            <p>instagram</p>
         </section>
         <section class="map">
             <iframe
@@ -91,8 +102,11 @@ include the following:
 A call to action to make a rental reservation.
 
 Readily available navigation and contact information.
+
 Summary information about all the types of rentals.
+
 Social media links (a general link is OK)
+
 Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
 ✔️ The current temperature
 ✔️ The current humidity
@@ -100,4 +114,5 @@ Weather information from the free version of openweathermap.org. Here is the min
 ✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and
 the associated weather icon.
 There may likely only be one data point under weather but your code should display any and all if provided by the API.
+
 Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.
