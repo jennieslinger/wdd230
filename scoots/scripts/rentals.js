@@ -1,162 +1,10 @@
-/*const cards = document.querySelector("#cards");
+const url = "https://jennieslinger.github.io/wdd230/scoots/data/rentals.json"
+
 
 const displayRentals = (rentals) => {
-    rentals.forEach(rental => {
-        let section = document.createElement("section");
-
-        let fullName = document.createElement("h2");
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-
-        let birthdate = document.createElement("p");
-        birthdate.textContent = `Birthdate: ${prophet.birthdate}`;
-
-        let birthplace = document.createElement('p');
-        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
-
-        let portrait = document.createElement("img");
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", fullName);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", 200);
-        portrait.setAttribute("height", 325);
-
-        section.appendChild(fullName);
-        section.appendChild(birthdate);
-        section.appendChild(birthplace);
-        section.appendChild(portrait);
-
-
-        cardsElement.appendChild(section)
-    });
-}
-
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.prophets);
-    displayProphets(data.prophets);
-}
-
-getProphetData();
-*/
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    // Declare and initialize global variables
-    const url = "https://jennieslinger.github.io/wdd230/scoots/data/rentals.json";
     const rentalElement = document.querySelector("#results");
-    console.log(rentalElement);
-    let rentalList = [];
-
-    const reset = () => {
-        rentalElement.innerHTML = "";
-    }
-
-    const displayRentals = (rentals) => {
-        rentals.forEach(rental => {
-            let article = document.createElement("article");
-
-            const typeElement = document.createElement("p");
-            typeElement.textContent = `Type: ${rental.type}`;
-
-            const makeElement = document.createElement("p");
-            makeElement.textContent = `Make: ${rental.make}`;
-
-            const modelElement = document.createElement("p");
-            modelElement.textContent = `Model: ${rental.model}`;
-
-            const personsElement = document.createElement("p");
-            personsElement.textContent = `Persons: ${rental.persons}`;
-
-            const addInfoElement = document.createElement("p");
-            addInfoElement.textContent = `Additional Information: ${recall.addditionalInformation}`;
-
-            const imageElement = document.createElement("img");
-            //IMAGE ELEMENT LINK GOES HERE!!!!!
-
-            article.appendChild(typeElement);
-            article.appendChild(makeElement);
-            article.appendChild(modelElement);
-            article.appendChild(personsElement);
-            article.appendChild(addInfoElement);
-
-            rentalElement.appendChild(article);
-        });
-    }
-
-    const getRentals = async () => {
-        try {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`Failed to fetch data. Status: ${response.status}`);
-            }
-            const data = await response.json();
-            if (!data.results) {
-                throw new Error('Data format error: "rentals" key not found in JSON');
-            }
-            rentalList = data.rentals;
-            console.log("Rental data:", rentalList);
-            displayRentals(rentalList);
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
-    }
-
-    /* sortBy Function */
-    const sortBy = (recalls) => {
-        reset();
-        const selectedSortOption = document.querySelector("#sortBy").value;
-        switch (selectedSortOption) {
-            case "type":
-                rentals.sort((a, b) => {
-                    return a.type.localeCompare(b.type);
-                });
-                break;
-            case "make":
-                rentals.sort((a, b) => {
-                    return a.make.localeCompare(b.make);
-                });
-                break;
-            case "model":
-                rentals.sort((a, b) => {
-                    return a.model.localeCompare(b.model);
-                });
-                break;
-            case "persons":
-                rentals.sort((a, b) => {
-                    return a.persons.localeCompare(b.persons);
-                });
-                break;
-                //case "availability":
-                recalls.sort((a, b) => {
-                    return a.product_type.localeCompare(b.product_type);
-                });
-            case "all":
-                break;
-        };
-        displayRentals(rentals);
-    };
-
-    /* Event Listener */
-    document.querySelector("#sortBy").addEventListener("change", () => {
-        sortBy(rentalList)
-    });
-
-    getRentals();
-
-});
-
-
-/*const urlRentals = "https://jennieslinger.github.io/wdd230/scoots/data/rentals.json";
-const rentalElement = document.querySelector("#results");
-console.log(rentalElement);
-let rentalList = [];
-
-const reset = () => {
     rentalElement.innerHTML = "";
-}
 
-const displayRentals = (rentals) => {
     rentals.forEach(rental => {
         let article = document.createElement("article");
 
@@ -173,10 +21,7 @@ const displayRentals = (rentals) => {
         personsElement.textContent = `Persons: ${rental.persons}`;
 
         const addInfoElement = document.createElement("p");
-        addInfoElement.textContent = `Additional Information: ${recall.addInfo}`;
-
-        const imageElement = document.createElement("img");
-        //IMAGE ELEMENT LINK GOES HERE!!!!!
+        addInfoElement.textContent = `Additional Information: ${recall.addditionalInformation}`;
 
         article.appendChild(typeElement);
         article.appendChild(makeElement);
@@ -190,58 +35,19 @@ const displayRentals = (rentals) => {
 
 const getRentals = async () => {
     try {
-        const response = await fetch(urlRentals);
-        if (response.ok) {
-            const data = await response.json();
-            rentalList = data.results;
-            console.log("Rental data:", rentalList);
-            displayRentals(rentalList);
-        } else {
-            console.error("Failed to fetch data. ");
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch data. Status: ${response.status}`);
         }
+        const data = await response.json();
+        console.log(data);
+        const rentalList = data.rentals;
+        if (!rentalList || !Array.isArray(rentals)) {
+            throw new Error('Data format error: "rentals" key not found or not an array');
+        }
+        displayRentals(rentalList);
     } catch (error) {
-        console.error("Error:", error);
+        console.error("Error fetching data:", error);
     }
 }
-
-/* sortBy Function */
-/*const sortBy = (recalls) => {
-    reset();
-    const selectedSortOption = document.querySelector("#sortBy").value;
-    switch (selectedSortOption) {
-        case "type":
-            rentals.sort((a, b) => {
-                return a.type.localeCompare(b.type);
-            });
-            break;
-        case "make":
-            rentals.sort((a, b) => {
-                return a.make.localeCompare(b.make);
-            });
-            break;
-        case "model":
-            rentals.sort((a, b) => {
-                return a.model.localeCompare(b.model);
-            });
-            break;
-        case "persons":
-            rentals.sort((a, b) => {
-                return a.persons.localeCompare(b.persons);
-            });
-            break;
-            //case "availability":
-            recalls.sort((a, b) => {
-                return a.product_type.localeCompare(b.product_type);
-            });
-        case "all":
-            break;
-    };
-    displayRentals(rentals);
-};
-
-/* Event Listener */
-/*document.querySelector("#sortBy").addEventListener("change", () => {
-    sortBy(rentalList)
-});
-
-getRentals();*/
+getRentals();

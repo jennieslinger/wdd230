@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="scootslogo.ico">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="scootslogo.ico">
     <meta property="og:title" content="~Scoots~ final project for Jenni Eslinger - WDD 230 Web Frontent Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/scootslogo.svg">
@@ -24,18 +25,28 @@
 
 <body>
     <header>
-        <h1><img src="images/scootslogo.svg" alt="logo" width="250"><br> ~Scoots~</h1>
-        <button id="menu"></button>
-        <nav class="navigation">
-            <a href="index.html" title="Home">~Home~</a>
-            <a href="rentals.html" title="Rentals">~Rentals~</a>
-            <a href="reserve.html" title="Reserve">~Reserve~</a>
-            <a href="contact.html" title="Contact">~Contact~</a>
-        </nav>
+        <div class="header-content">
+            <img class="logo" src="images/scootslogo.svg" alt="logo" width="250">
+            <h1>~Scoots~</h1>
+        </div>
+        <picture>
+            <source srcset="images/scoots-hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/scoots-hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/scoots-hero-large.webp" alt="Scoots de Cozumel" width="1500" height="500">
+        </picture>
+    </header>
+    <button id="menu"></button>
+
+    <nav class="navigation">
+        <a href="index.html" title="Home">~Home~</a>
+        <a href="rentals.html" title="Rentals">~Rentals~</a>
+        <a href="reserve.html" title="Reserve">~Reserve~</a>
+        <a href="contact.html" title="Contact">~Contact~</a>
+    </nav>
 
     </header>
     <main>
-        <h1>Locations</h1>
+        <h3>Locations</h3>
         <section class="location-card">
             <h2>El Centro de Cozumel</h2>
             <p>near the Playa del Carmen-Cozumel Ferry Dock</p>
@@ -87,7 +98,7 @@
             </form>
         </section>
     </main>
-    <footer></footer>
+    <footer>&copy;2024 | Jenni Eslinger | Arizona, United States | ~Scoots~</footer>
 
 </body>
 

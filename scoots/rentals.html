@@ -23,41 +23,53 @@
 
 <body>
     <header>
-        <h1><img src="images/scootslogo.svg" alt="logo" width="250"><br> ~Scoots~</h1>
-        <button id="menu"></button>
-        <nav class="navigation">
-            <a href="index.html" title="Home">~Home~</a>
-            <a href="rentals.html" title="Rentals">~Rentals~</a>
-            <a href="reserve.html" title="Reserve">~Reserve~</a>
-            <a href="contact.html" title="Contact">~Contact~</a>
-        </nav>
+        <header>
+            <div class="header-content">
+                <img class="logo" src="images/scootslogo.svg" alt="logo" width="250">
+                <h1>~Scoots~</h1>
+            </div>
+            <picture>
+                <source srcset="images/scoots-hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/scoots-hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/scoots-hero-large.webp" alt="Scoots de Cozumel" width="1500" height="500">
+            </picture>
+        </header>
+
     </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="index.html" title="Home">~Home~</a>
+        <a href="rentals.html" title="Rentals">~Rentals~</a>
+        <a href="reserve.html" title="Reserve">~Reserve~</a>
+        <a href="contact.html" title="Contact">~Contact~</a>
+    </nav>
     <main>
-        <h1>Rentals</h1>
+        <h3>Available Scoots</h3>
+        <img src="images/hondadio.webp" alt="Honda Dio"><br>
+        <h5>Honda Dio</h5>
+        <img src="images/hondametropolitan.webp" alt="Honda Metropolitan"><br>
+        <h5>Honda Metropolitan</h5>
+        <img src="images/hondapcx.webp" alt="Honda PCX"><br>
+        <h5>Honda PCX</h5>
+        <img src="images/hondapioneer.webp" alt="Honda Pioneer"><br>
+        <h5>Honda Pioneer</h5>
+        <img src="images/jeep2door.webp" alt="Jeep Wrangler 2 door"><br>
+        <h5>Jeep Wrangler 2 door</h5>
+        <img src="images/jeep4door.webp" alt="Jeep Wrangler 4 door"><br>
+        <h5>Jeep Wrangler 4 door</h5>
 
-        <select id="sortBy" title="Choose a search filter.">
-            <option value="" disabled selected>Filter Rentals</option>
-            <option value="type">Type</option>
-            <option value="make">Make</option>
-            <option value="model">Model</option>
-            <option value="persons">Persons</option>
-            <option value="all">No Filter</option>
-        </select>
-
-        <div id="results">
+        <div id="rentalElement">
         </div>
+        <a href="reserve.html" class="rent-now-button">
+            <button>Rent Now!</button>
+        </a>
 
     </main>
 
     <footer>
-
+        &copy;2024 | Jenni Eslinger | Arizona, United States | ~Scoots~
     </footer>
     <script src="scripts/rentals.js"></script>
 </body>
 
 </html>
-
-<!--The Rentals page describes the available rental options and prices with images.
-The prices displayed on the site must be obtained from a JSON data source of your own making.
-Store this .json file in a data 📁 folder in this project folder.
-Incorporate a data table in your HTML structure to display some portion of this information.-->
