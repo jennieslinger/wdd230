@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             personsElement.textContent = `Persons: ${rental.persons}`;
 
             const addInfoElement = document.createElement("p");
-            addInfoElement.textContent = `Additional Information: ${recall.addInfo}`;
+            addInfoElement.textContent = `Additional Information: ${recall.addditionalInformation}`;
 
             const imageElement = document.createElement("img");
             //IMAGE ELEMENT LINK GOES HERE!!!!!
@@ -87,16 +87,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const getRentals = async () => {
         try {
             const response = await fetch(url);
-            if (response.ok) {
-                const data = await response.json();
-                rentalList = data.results;
-                console.log("Rental data:", rentalList);
-                displayRentals(rentalList);
-            } else {
-                console.error("Failed to fetch data. ");
+            if (!response.ok) {
+                throw new Error(`Failed to fetch data. Status: ${response.status}`);
             }
+            const data = await response.json();
+            if (!data.results) {
+                throw new Error('Data format error: "rentals" key not found in JSON');
+            }
+            rentalList = data.rentals;
+            console.log("Rental data:", rentalList);
+            displayRentals(rentalList);
         } catch (error) {
-            console.error("Error:", error);
+            console.error("Error fetching data:", error);
         }
     }
 

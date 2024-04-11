@@ -28,8 +28,10 @@
             <span>Today's high temperature is <span id="temp-max"></span>
                 <button onclick="document.getElementbyId('banner').style.display='none';">X</button>
         </div>
-        <img class="logo" src="images/scootslogo.svg" alt="logo" width="250">
-        <h1>~Scoots~</h1>
+        <div class="header-content">
+            <img class="logo" src="images/scootslogo.svg" alt="logo" width="250">
+            <h1>~Scoots~</h1>
+        </div>
         <picture>
             <source srcset="images/scoots-hero-small.webp" media="(max-width: 500px)">
             <source srcset="images/scoots-hero-medium.webp" media="(max-width: 1000px)">
@@ -44,26 +46,53 @@
         <a href="reserve.html" title="Reserve">~Reserve~</a>
         <a href="contact.html" title="Contact">~Contact~</a>
     </nav>
- 
+
     <main>
         <div class="main-container">
+            <div class="scoots-imgs">
+                <img src="images/scoots1.webp" alt="scooter in the city">
+                <img src="images/scoots3.webp" alt="jeep in the sand">
+            </div>
             <section class="scoots">
-                <h2>The best way to experience Cozumel!</h2>
-                <br>
-                <h3>Whether you are traveling alone or with a group, we have the perfect scoot for you</h3>
-                <a href="reserve.html">
+                <h3>Scoots is a premier scooter rental company located in Cozumel, Mexico, offering an unparalleled
+                    experience for travelers exploring the island. With a diverse fleet of scooters and Jeeps suitable
+                    for solor adventures or group excersions, Scoots provides an ideal mode of transportation for
+                    discoverying the beauty and charm of Cozumel. </h3>
+                <a href="reserve.html" class="rent-now-button">
                     <button>Rent Now!</button>
                 </a>
-                <div class="scoots-imgs">
-                    <img src="images/scoots1.webp" alt="scooter in the city">
+            </section>
+
+            <section>
+                <div class="testimony">
+                    <h2>Testimonials</h2>
+                    <br>
+                    <p>⭐⭐⭐⭐⭐<br>The best way to experience Cozumel!</p>
+                    <p>-Jenni, March 2024</p>
                     <img src="images/scoots2.webp" alt="scooter on the beach">
-                    <img src="images/scoots3.webp" alt="jeep in the sand">
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <br>
+                <p>Email: info@scootscozumel.com</p>
+                <p>Phone: 1-987-555-1234</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
 
             <section class="weather">
                 <div class="card">
                     <h3>Current Weather</h3>
+                    <br>
                     <p>Temperature:<span id="current-temp"></span></p>
                     <p>Humidity:<span id="current-humid"></span></p>
                     <figure>
@@ -74,21 +103,9 @@
                 </div>
             </section>
 
-            <section class="contact">
-                <h4>Contact Us</h4>
-                <p>Email: info@scootscozumel.com</p>
-                <p>Phone: 1-987-555-1234</p>
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-youtube"></a>
-            </section>
 
-            <section class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+
+
         </div>
     </main>
     <footer>
