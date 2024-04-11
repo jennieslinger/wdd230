@@ -28,14 +28,14 @@ async function apiFetch() {
 apiFetch()
 
 function displayResults(data) {
-    currentTemp.innerHTML = ` ${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = ` ${data.main.temp}&deg;`;
     const iconsrc = 'https://openweathermap.org/img/w/${data.weather[0].icon}.png';
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
     currentHumid.innterHTML = ` ${data.main.humidity}`;
-    tempMax.textContent = ` ${data.main.temp_max}&deg;F`;
+    tempMax.textContent = ` ${data.main.temp_max}&deg;`;
 }
 
 /*function displayResults(dailyForecast) {

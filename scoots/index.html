@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
-    <!--<link rel="stylesheet" href="styles/larger.css">-->
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="scootslogo.ico">
     <meta property="og:title" content="~Scoots~ final project for Jenni Eslinger - WDD 230 Web Frontent Development">
     <meta property="og:type" content="website">
@@ -23,69 +24,72 @@
 
 <body>
     <header>
-        <h1><img src="images/scootslogo.svg" alt="logo" width="250"><br> ~Scoots~</h1>
+        <div class="banner">
+            <span>Today's high temperature is <span id="temp-max"></span>
+                <button onclick="document.getElementbyId('banner').style.display='none';">X</button>
+        </div>
+        <img class="logo" src="images/scootslogo.svg" alt="logo" width="250">
+        <h1>~Scoots~</h1>
+        <picture>
+            <source srcset="images/scoots-hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/scoots-hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/scoots-hero-large.webp" alt="Scoots de Cozumel" width="1500" height="500">
+        </picture>
     </header>
     <button id="menu"></button>
-    <div id="banner">
-        <span>Today's high temperature is <span id="temp-max"></span>
-            <button onclick="document.getElementbyId('banner').style.display='none';">X</button>
-    </div>
+
     <nav class="navigation">
         <a href="index.html" title="Home">~Home~</a>
         <a href="rentals.html" title="Rentals">~Rentals~</a>
         <a href="reserve.html" title="Reserve">~Reserve~</a>
         <a href="contact.html" title="Contact">~Contact~</a>
     </nav>
-    <!--banner-->
+ 
     <main>
-
-        <div class="scoots">
-            <h2>The best way to experience Cozumel!
+        <div class="main-container">
+            <section class="scoots">
+                <h2>The best way to experience Cozumel!</h2>
                 <br>
-                Rent your Scoot now!
-            </h2>
+                <h3>Whether you are traveling alone or with a group, we have the perfect scoot for you</h3>
+                <a href="reserve.html">
+                    <button>Rent Now!</button>
+                </a>
+                <div class="scoots-imgs">
+                    <img src="images/scoots1.webp" alt="scooter in the city">
+                    <img src="images/scoots2.webp" alt="scooter on the beach">
+                    <img src="images/scoots3.webp" alt="jeep in the sand">
+                </div>
+            </section>
+
+            <section class="weather">
+                <div class="card">
+                    <h3>Current Weather</h3>
+                    <p>Temperature:<span id="current-temp"></span></p>
+                    <p>Humidity:<span id="current-humid"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Temperature Max:<span id="temp-max"></span></p>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@scootscozumel.com</p>
+                <p>Phone: 1-987-555-1234</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </section>
+
+            <section class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
         </div>
-        <div class="hero">
-            <picture>
-                <source srcset="images/cozumel-hero-small.webp" media="(max-width: 400px)">
-                <source srcset="images/cozumel-hero-medium.webp" media="(max-width: 600px)">
-                <img src="images/cozumel-hero-large.webp" alt="Scoots de Cozumel" width="960" height="599">
-            </picture>
-        </div>
-        <section class="weather">
-            <div class="card">
-                <h3>Current Weather</h3>
-                <p>Temperature:<span id="current-temp"></span></p>
-                <p>Humidity:<span id="current-humid"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <p>Temperature Max:<span id="temp-max"></span></p>
-            </div>
-        </section>
-        <section class="rental-summary">
-            <p>Whether you are traveling alone or with a group, we have the perfect scoot for you</p>
-            <div class="scootimgs">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </section>
-        <section class="contact">
-            <h4>Contact Us</h4>
-            <p>Email: info@scootscozumel.com</p>
-            <p>Phone: 1-987-555-1234</p>
-            <p>Socials:</p>
-            <p>tiktok</p> <!--ENTER SOCIAL ICONS HERE-->
-            <p>instagram</p>
-        </section>
-        <section class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2481.1310208685563!2d-87.07572241586409!3d20.621618553420713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1712101269178!5m2!1sen!2sus"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
     </main>
     <footer>
         &copy;2024 | Jenni Eslinger | Arizona, United States | Last Modified: <p id="today"></p>
